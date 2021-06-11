@@ -60,7 +60,7 @@ btn2 = Button(window, text="8", font=("Times new Roman", 15 , "bold", "italic"),
 btn2.grid(row=1, column=2, sticky="nsew")
 btn3 = Button(window, text="9", font=("Times new Roman", 15 , "bold", "italic"), command=lambda:change("9"))
 btn3.grid(row=1, column=3, sticky="nsew")
-btn4 = Button(window, text="X", font=("Times new Roman", 15 , "bold", "italic"), command=lambda:change_2("X"))
+btn4 = Button(window, text="X", font=("Times new Roman", 15 , "bold", "italic"), command=lambda:allset("3"))
 btn4.grid(row=1, column=4, sticky="nsew")
 
 btn5 = Button(window, text="4", font=("Times new Roman", 15 , "bold", "italic"), command=lambda:change("4"))
@@ -69,7 +69,7 @@ btn6 = Button(window, text="5", font=("Times new Roman", 15 , "bold", "italic"),
 btn6.grid(row=2, column=2, sticky="nsew")
 btn7 = Button(window, text="6", font=("Times new Roman", 15 , "bold", "italic"), command=lambda:change("6"))
 btn7.grid(row=2, column=3, sticky="nsew")
-btn8 = Button(window, text="-", font=("Times new Roman", 15 , "bold", "italic"), command=lambda:change_2("-"))
+btn8 = Button(window, text="-", font=("Times new Roman", 15 , "bold", "italic"), command=lambda:allset("2"))
 btn8.grid(row=2, column=4, sticky="nsew")
 
 btn9 = Button(window, text="1", font=("Times new Roman", 15 , "bold", "italic"), command=lambda:change("1"))
@@ -78,21 +78,21 @@ btn10 = Button(window, text="2", font=("Times new Roman", 15 , "bold", "italic")
 btn10.grid(row=3, column=2, sticky="nsew")
 btn11 = Button(window, text="3", font=("Times new Roman", 15 , "bold", "italic"), command=lambda:change("3"))
 btn11.grid(row=3, column=3, sticky="nsew")
-btn12 = Button(window, text="+", font=("Times new Roman", 15 , "bold", "italic"), command=lambda:change_2("+"))
+btn12 = Button(window, text="+", font=("Times new Roman", 15 , "bold", "italic"), command=lambda:allset("1"))
 btn12.grid(row=3, column=4, sticky="nsew")
 
 btn13 = Button(window, text="離開", font=("Times new Roman", 15 , "bold", "italic"), command=window.destroy)
 btn13.grid(row=4, column=1, sticky="nsew")
 btn14 = Button(window, text="0", font=("Times new Roman", 15 , "bold", "italic"), command=lambda:change("0"))
 btn14.grid(row=4, column=2, sticky="nsew")
-btn15 = Button(window, text=".", font=("Times new Roman", 15 , "bold", "italic"), command=lambda:change("."))
+btn15 = Button(window, text=".", font=("Times new Roman", 15 , "bold", "italic"), command=lambda:allset("."))
 btn15.grid(row=4, column=3, sticky="nsew")
-btn16 = Button(window, text="/", font=("Times new Roman", 15 , "bold", "italic"), command=lambda:change_2("="))
+btn16 = Button(window, text="/", font=("Times new Roman", 15 , "bold", "italic"), command=lambda:allset("4"))
 btn16.grid(row=4, column=4, sticky="nsew")
 
 btn17 = Button(window, text="清除", font=("Times new Roman", 15 , "bold", "italic"), )
 btn17.grid(row=5, column=1, sticky="nsew")#還無法清除
-btn18 = Button(window, text="=", font=("Times new Roman", 15 , "bold", "italic"), command=lambda:change_2("="))
+btn18 = Button(window, text="=", font=("Times new Roman", 15 , "bold", "italic"), command=lambda:change_2("4"))
 btn18.grid(row=5, column=2, sticky="nsew")
 
 window.mainloop()
