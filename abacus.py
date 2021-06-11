@@ -28,7 +28,6 @@ def change_2():
         lab0["text"] = a1 * a2
     elif all == 4:
         lab0["text"] = a1 // a2
-        #還未完成
 
 # def clearTextInput():
 #     lab0.delete("1.0","end")
@@ -92,7 +91,7 @@ btn16.grid(row=4, column=4, sticky="nsew")
 
 btn17 = Button(window, text="清除", font=("Times new Roman", 15 , "bold", "italic"), )
 btn17.grid(row=5, column=1, sticky="nsew")#還無法清除
-btn18 = Button(window, text="=", font=("Times new Roman", 15 , "bold", "italic"), command=lambda:change_2("4"))
-btn18.grid(row=5, column=2, sticky="nsew")
+btn18 = Button(window, text="=", font=("Times new Roman", 15 , "bold", "italic"), command=lambda:change_2())
+btn18.grid(row=5, column=2, sticky="nsew")#無法算出
 
 window.mainloop()
